@@ -36,18 +36,17 @@ def seed_db():
         postcode="4000"
     )
 
-
     # Users
     u1 = User(first_name="Alice", last_name="Smith", email="alice@example.com", phone="0400000001", address=addr1)
     u2 = User(first_name="Bob", last_name="Jones", email="bob@example.com", phone="0400000002", address=addr2)
 
-    # Pets
+    # Pets (using the updated boolean field is_adopted)
     p1 = Pet(
         name="Buddy",
         species="Dog",
         age=3,
         color="Brown",
-        adoption_status="Adopted"
+        is_adopted=False  # Pet is available no owner assigned yet
     )
 
     p2 = Pet(
@@ -55,13 +54,24 @@ def seed_db():
         species="Cat",
         age=2,
         color="Black and White",
-        adoption_status="Available",
-        user_id=u1.id
+        is_adopted=False  # Pet is available
     )
-
 
     db.session.add_all([u1, u2, p1, p2])
     db.session.commit()
+
+    # Simulate an adoption event:
+    # User u2 adopts pet p1.
+    adopt = Adoption(user_id=u2.id, pet_id=p1.id, notes="Rescued from local shelter")
+    db.session.add(adopt)
+    db.session.commit()
+
+    # Update pet p1 to reflect that it is now adopted.
+    p1.user_id = u2.id
+    p1.is_adopted = True
+    db.session.commit()
+
+    print("Database seeded with sample data!")
 
 
     # Adoptions record

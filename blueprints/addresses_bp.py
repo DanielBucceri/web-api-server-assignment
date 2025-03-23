@@ -1,9 +1,22 @@
 from flask import Blueprint, request
 from init import db
-from models.user import User
-from models.address import Address, one_address, address_without_id
+from models.address import Address, one_address, address_without_id, many_addresses
 
 addresses_bp = Blueprint('addresses', __name__)
+
+#Read all
+@addresses_bp.route('/addresses', methods=['GET'])
+def get_all_addresses():
+    addresses = Address.query.all()
+    return many_addresses.dump(addresses), 200
+
+# READ ONE
+@addresses_bp.route('/addresses/<int:address_id>', methods=['GET'])
+def get_one_address(address_id):
+    addr = Address.query.get(address_id)
+    if addr:
+        return one_address.dump(addr), 200
+    return {"error": f"Address with id {address_id} not found"}, 404    
 
 # CREATE
 @addresses_bp.route('/addresses', methods=['POST'])
@@ -26,6 +39,8 @@ def update_address(address_id):
     addr.city = data.get('city', addr.city)
     addr.state = data.get('state', addr.state)
     addr.postcode = data.get('postcode', addr.postcode)
+    addr.country = data.get('country', addr.country)
+    addr.suburb = data.get('suburb', addr.suburb)
     db.session.commit()
     return one_address.dump(addr), 200
 
