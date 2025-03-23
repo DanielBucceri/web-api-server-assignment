@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
   <diagram name="Pet Adoption ERD" id="petAdoptionERD">
-    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -73,7 +73,7 @@
         <mxCell id="66XWUvadjtcLpmtYYZpx-13" value="color" style="text;align=left;" parent="pets" vertex="1">
           <mxGeometry y="180" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="66XWUvadjtcLpmtYYZpx-14" value="adoption_status" style="text;align=left;" parent="pets" vertex="1">
+        <mxCell id="66XWUvadjtcLpmtYYZpx-14" value="is_adopted" style="text;align=left;" parent="pets" vertex="1">
           <mxGeometry y="210" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="66XWUvadjtcLpmtYYZpx-15" value="description, image" style="text;align=left;" parent="pets" vertex="1">
