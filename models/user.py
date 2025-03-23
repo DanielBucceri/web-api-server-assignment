@@ -1,7 +1,7 @@
 from init import db, ma
 from marshmallow import fields, validate
-from marshmallow.validate import Email, Length
-from models.pet import Pet
+from marshmallow.validate import Length
+
 
 class User(db.Model):
     __tablename__ = 'users'

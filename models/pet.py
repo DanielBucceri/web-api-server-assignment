@@ -26,7 +26,7 @@ class PetSchema(ma.Schema):
     species = fields.String(required=True, validate=validate.Length(min=1))
     
     class Meta:
-        fields = ("id", "name", "age", "breed", "color", "is_adopted", "description", "image")
+        fields = ("id", "name", "age", "breed", "color", "is_adopted", "description", "image", "user_id")
 
 
 # chema for a single pet includeing nested user info
