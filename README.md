@@ -1,5 +1,6 @@
 ```markdown
 # Pet Adoption API
+Accessible via "https://web-api-server-assignment.onrender.com" Or custom domain "www.adoptions-danielbucceriwebsite.website"
 
 This is a simple Flask based web server for a pet adoption management system. It handles Users, Pets, Addresses, and Adoption records. Each resource supports various CRUD operations, and a Postgres database is used for persistent storage.
 
