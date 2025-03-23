@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+  <diagram name="Pet Adoption ERD" id="petAdoptionERD">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="users" value="Users" style="shape=rectangle;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+          <mxGeometry x="70" y="60" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" value="PK id" style="text;align=left;verticalAlign=middle;" parent="users" vertex="1">
+          <mxGeometry y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="first_name" style="text;align=left;" parent="users" vertex="1">
+          <mxGeometry y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" value="last_name" style="text;align=left;" parent="users" vertex="1">
+          <mxGeometry y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" value="email" style="text;align=left;" parent="users" vertex="1">
+          <mxGeometry y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u5" value="phone" style="text;align=left;" parent="users" vertex="1">
+          <mxGeometry y="150" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u6" value="FK address_id" style="text;align=left;" parent="users" vertex="1">
+          <mxGeometry y="180" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="addresses" value="Addresses" style="shape=rectangle;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+          <mxGeometry x="400" y="130" width="200" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-1" value="PK id" style="text;align=left;" parent="addresses" vertex="1">
+          <mxGeometry y="30" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-2" value="street" style="text;align=left;" parent="addresses" vertex="1">
+          <mxGeometry y="60" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-3" value="suburb" style="text;align=left;" parent="addresses" vertex="1">
+          <mxGeometry y="90" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-4" value="city" style="text;align=left;" parent="addresses" vertex="1">
+          <mxGeometry y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-5" value="state" style="text;align=left;" parent="addresses" vertex="1">
+          <mxGeometry y="150" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-6" value="postcode" style="text;align=left;" parent="addresses" vertex="1">
+          <mxGeometry y="180" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-7" value="country" style="text;align=left;" parent="addresses" vertex="1">
+          <mxGeometry y="210" width="200" height="30" as="geometry" />
+        </mxCell>
+        <object label="Pets" User.id="" test="" id="pets">
+          <mxCell style="shape=rectangle;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+            <mxGeometry x="50" y="400" width="200" height="270" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-8" value="PK id" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="30" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-9" value="name" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="60" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-10" value="age" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="90" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-11" value="species" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-12" value="breed" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="150" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-13" value="color" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="180" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-14" value="adoption_status" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="210" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-15" value="description, image" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="240" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-16" value="FK User_id" style="text;align=left;" parent="pets" vertex="1">
+          <mxGeometry y="280" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="adoptions" value="Adoptions" style="shape=rectangle;verticalAlign=top;spacingTop=10;" parent="1" vertex="1">
+          <mxGeometry x="380" y="460" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-17" value="PK id" style="text;align=left;" parent="adoptions" vertex="1">
+          <mxGeometry y="30" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-18" value="FK user_id" style="text;align=left;" parent="adoptions" vertex="1">
+          <mxGeometry y="60" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-19" value="FK pet_id" style="text;align=left;" parent="adoptions" vertex="1">
+          <mxGeometry y="90" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-20" value="adoption_date" style="text;align=left;" parent="adoptions" vertex="1">
+          <mxGeometry y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66XWUvadjtcLpmtYYZpx-21" value="notes" style="text;align=left;" parent="adoptions" vertex="1">
+          <mxGeometry y="150" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u1daE5y9M54pdrsPBnJI-5" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="u6" target="66XWUvadjtcLpmtYYZpx-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="260" y="240" as="sourcePoint" />
+            <mxPoint x="360" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u1daE5y9M54pdrsPBnJI-6" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="u1" target="66XWUvadjtcLpmtYYZpx-17" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-250" y="620" as="sourcePoint" />
+            <mxPoint x="-150" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u1daE5y9M54pdrsPBnJI-8" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="66XWUvadjtcLpmtYYZpx-8" target="66XWUvadjtcLpmtYYZpx-18" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-140" y="580" as="sourcePoint" />
+            <mxPoint x="-40" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
