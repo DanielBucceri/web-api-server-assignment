@@ -54,11 +54,11 @@ def create_app():
 
     return app
     
-
+app = create_app()
 # Run the Flask development server if this script is executed directly
 if __name__ == '__main__':
     app = create_app()
     app.run(debug=True)
 
 
-app = create_app()
+
